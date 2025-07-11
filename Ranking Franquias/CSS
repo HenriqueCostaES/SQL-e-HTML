@@ -3,20 +3,19 @@
       background-color: #f0f2f5;
       margin: 0;
       padding: 0;
+      width: 575px;
+      height: 448px;
     }
 
     .ranking-container {
-      width: 350px;
       background: linear-gradient(to bottom, #ffffff, #f9f9f9);
-      border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-      margin: 30px auto;
       overflow: hidden;
     }
 
     .ranking-header {
       background: linear-gradient(to right, #0078d4, #00c6ff);
-      padding: 16px;
+      padding: 16px 10px;
       text-align: center;
       color: white;
       font-size: 18px;
@@ -24,46 +23,42 @@
     }
 
     .ranking-list {
-      list-style: none;
-      margin: 0;
-      padding: 0;
+    list-style: none;
+    padding-left: 5px;
+    }
+    .colunas,
+    .ranking-item {
+      display: grid;
+      grid-template-columns: 0.1fr 2fr 1.4fr 1.4fr 1.4fr 1fr;
+      gap: 6px;
+      align-items: center;
+      padding: 10px 5px;
+      justify-items: start;
+
+    }
+
+    .colunas {
+      background: linear-gradient(to right, #0078d4, #00c6ff);
+      color: white;
+      font-weight: bold;
+      font-size: 13px;
+      padding-left: 5px;
+
     }
 
     .ranking-item {
-      display: flex;
-      align-items: center;
-      padding: 12px 16px;
-      border-bottom: 1px solid #e5e5e5;
+      border-bottom: 1px solid #ddd;
+      background-color: white;
+      transition: background-color 0.2s ease-in-out;
     }
 
     .ranking-item:hover {
-      background-color: #f0f8ff;
-    }
-
-    .ranking-item .rank {
-      font-weight: bold;
-      font-size: 16px;
-      width: 30px;
-      color: #666;
-    }
-
-    .ranking-item .empresa {
-      flex: 1;
-      font-weight: 500;
-      font-size: 14px;
-      padding-left: 10px;
-      color: #333;
-    }
-
-    .ranking-item .valor {
-      font-family: monospace;
-      color: #2b7a78;
-      font-weight: bold;
+      background-color: #f0f4f9;
     }
 
     .ranking-item.top1 {
-      background-color: #eafbea;
-      border-left: 4px solid #2ecc71;
+      background: linear-gradient(to right, #e0f8e9, #d3f8dd);
+      border-left: 4px solid #27ae60;
     }
 
     .ranking-item.pior {
@@ -71,9 +66,36 @@
       border-left: 4px solid #e74c3c;
     }
 
-    .ranking-footer {
-      padding: 10px 16px;
-      font-size: 12px;
-      color: #999;
+
+    .atual, .anterior, .diferenca, .percentual {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      font-size: 10px;
+      font-weight: 600;
+      gap: 6px;
+    }
+    .rank, .col-franquia {
+      align-items: start;
+      display: flex;
+      font-size: 10px;
+      font-weight: 600;
+      gap: 6px;
+    }
+
+    .arrow {
+      width: 10px;
       text-align: center;
     }
+    .valor {
+      font-size: 10px;
+      min-width: 60px;
+      text-align: right;
+    }
+    .percentual .valor {
+      min-width: 30px;
+  }
+
+    .positivo { color: green; }
+    .negativo { color: red; }
+    .neutro   { color: black; }
