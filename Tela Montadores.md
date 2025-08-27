@@ -329,7 +329,8 @@ ORDER BY
 
   </div>
 </div>
-
+```
+```javascript
 <script>
 const mgeSession = '<%= session.getAttribute("mgeSession") %>';
 
@@ -564,7 +565,7 @@ async function enviarImagem(input, arquivo) {
 atualizarMontagens();
 
 </script>
-
+```
 </body>
 </html>
 
