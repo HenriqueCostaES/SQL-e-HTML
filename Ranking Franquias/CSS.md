@@ -1,4 +1,4 @@
-```html
+```css
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f0f2f5;
