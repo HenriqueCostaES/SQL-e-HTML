@@ -1,3 +1,5 @@
+```html
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="UTF-8" isELIgnored="false" %>
 <%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c" %>
 <%@ taglib prefix="snk" uri="/WEB-INF/tld/sankhyaUtil.tld" %>
@@ -1389,3 +1391,4 @@ window.onload = carregarRanking;
 </body>
 </html>
 
+```
