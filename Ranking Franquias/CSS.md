@@ -1,3 +1,4 @@
+```html
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f0f2f5;
@@ -99,3 +100,4 @@
     .positivo { color: green; }
     .negativo { color: red; }
     .neutro   { color: black; }
+```
