@@ -1,4 +1,4 @@
-```sql
+
 --Principal
 SELECT 
     CAB.CODEMP,
@@ -72,4 +72,4 @@ WHERE
 
 ORDER BY
     TIA.CODMOTIVO
-```
+

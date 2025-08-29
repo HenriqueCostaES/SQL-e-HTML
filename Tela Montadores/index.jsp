@@ -1,4 +1,3 @@
-``` html
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" isELIgnored="false"%>
 <%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c" %>
 <%@ taglib prefix="snk" uri="/WEB-INF/tld/sankhyaUtil.tld" %>
@@ -329,8 +328,7 @@ ORDER BY
 
   </div>
 </div>
-```
-```javascript
+
 <script>
 const mgeSession = '<%= session.getAttribute("mgeSession") %>';
 
@@ -565,10 +563,6 @@ async function enviarImagem(input, arquivo) {
 atualizarMontagens();
 
 </script>
-```
+
 </body>
 </html>
-
-```
-
-
